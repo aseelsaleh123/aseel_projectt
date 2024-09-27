@@ -1,0 +1,787 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    direction: rtl;
+}
+
+body {
+    background-color: rgb(245, 241, 244);
+}
+
+.btn-outline-pink {
+    color: rgb(240, 233, 238);
+    /* اللون الزهري للنص */
+    border-color: #030102;
+    /* اللون الزهري للحدود */
+}
+
+.btn-outline-pink:hover {
+    background-color: rgb(228, 223, 227);
+    /* اللون الزهري عند التمرير */
+    color: white;
+    /* اللون الأبيض للنص عند التمرير */
+}
+
+.navbar {
+
+    background-color: rgb(228, 223, 227);
+    ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+
+
+#navbar {
+    background-color: transparent;
+    
+}
+
+.navbar-scrolled {
+    background-color: #000000;
+}
+
+
+
+
+.nav-item-nowrap {
+    white-space: nowrap;
+    /* منع التفاف النص */
+}
+
+.container-fluid {
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.collapse {
+
+    justify-content: center;
+    align-items: center;
+    flex-grow: 0;
+}
+.navbar-expand-lg .offcanvas{
+    flex-grow: 0;
+} 
+
+.navbar-brand {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: darkgreen;
+}
+
+.img-logo {
+    height: 70px;
+    height: 50px;
+
+    justify-content: space-between;
+
+
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    margin-left: 15px;
+}
+
+.sec {
+    height: 200px;
+}
+
+.navbar-nav .nav-link i {
+    margin-left: 5px;
+}
+.navbar .container-fluid .menu{
+    display: none;
+        
+}
+.navbar .container-fluid .menu{
+    border: none;
+    padding: 10px;
+    border-radius: 5px ;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+.navbar .container-fluid .menu i{
+    font-size: 30px;
+
+}
+
+@media (max-width: 970px) {
+    .navbar .container-fluid .menu{
+        display: block;
+
+    }
+
+    
+}
+
+
+.custom-icons {
+    display: flex;
+    align-items: center;
+    
+
+    list-style: none;
+}
+
+@media (max-width: 590px) {
+    .custom-icons{
+        display: none;
+
+    }
+
+    
+}
+
+.custom-icons .nav-item {
+    margin-left: 2px;
+
+
+}
+
+.nav-link {
+    height: 40px;
+    width: 50px;
+}
+
+.carousel-item {
+    background-image: url();
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* لتصغير القائمة على التلفون والآيباد */
+@media  (max-width: 989px) {
+    .custom-icons {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: white;
+        text-align: center;
+        justify-content: space-around;
+    }
+
+    /* تعديل تصميم الأيقونات إن لزم */
+    .custom-icons i {
+        margin: 0 15px;
+        font-size: 1.5em;
+    }
+}
+
+
+.img-item {
+    width: 250px;
+}
+
+
+.carousel-caption {
+    left: 0;
+    right: auto;
+    text-align: center;
+
+    padding-left: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.carousel-caption h2 {
+    font-size: 1.5rem;
+    /* حجم العنوان */
+    font-weight: bold;
+    margin-bottom: 20px;
+    /* مسافة بين العنوان والنص */
+    color: black;
+}
+
+.carousel-caption p {
+    font-size: 1.25rem;
+    /* حجم النص */
+    margin-bottom: 20px;
+    /* مسافة بين النص والزر */
+    color: black;
+}
+
+/* لضبط الكتابة فوق الصورة على شاشة الهاتف والآيباد */
+@media  (max-width: 768px) {
+    .carousel-caption {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+
+    .carousel-caption {
+        position: absolute;
+        top: 50%;  /* يضع النص في منتصف الصورة عمودياً */
+        left: 50%;  /* يضع النص في منتصف الصورة أفقياً */
+        transform: translate(-50%, -50%);  /* لضمان تمركز النص تماماً */
+        
+        padding: 10px;
+        border-radius: 5px;
+    }
+}
+@media  (max-width: 768px) {
+    .carousel {
+        width: 4000pxpx;
+        position: relative;
+    }
+
+   
+}
+
+.offcanvas-header{
+    background-color: #fff;
+}
+@media  (max-width: 989px) {
+    .offcanvas-body{
+        background-color: #fff;
+    }
+
+   
+}
+
+.offcanvas-backdrop.show {
+    opacity: 0.6;
+}
+.offcanvas.show:not(.hiding), .offcanvas.showing {
+    transform: none;
+    width: 250px;
+}
+@media  (max-width: 989px) {
+    .courses1 .row1{
+        display: flex;
+        flex-direction: column;
+    }
+
+   
+}
+
+@media  (max-width: 989px) {
+    .col {
+        padding-right: 50px;
+    }
+
+   
+}
+
+@media (min-width: 768px) {
+    .row-cols-md-2>* {
+        flex: 0 0 auto;
+        /* width: 50%; */
+    }
+}
+
+
+
+
+.carousel-caption button {
+    font-size: 1rem;
+    /* حجم النص في الزر */
+    padding: 10px 20px;
+    /* حجم الزر */
+    color: black;
+
+
+}
+
+
+
+
+.footer {
+
+    padding: 20px 0;
+    color: black;
+
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-left-side .logo {
+    margin-bottom: 10px;
+}
+
+.footer-left-side .icon img {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.footer-right-side {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: black;
+}
+
+h2 {
+    color: black;
+}
+
+.footer-right-side .footwer-item {
+    margin-right: 40px;
+}
+
+.footer-right-side h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-right-side ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-right-side ul li {
+    margin-bottom: 8px;
+}
+
+.footer-right-side ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-right-side ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/start course/ .courses {
+    padding: 40px 0;
+    height: 100px;
+
+
+}
+
+.courses .row {
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.course img {
+    width: 100%;
+}
+
+.course-items {
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 350px; */
+    gap: 10px;
+    flex-grow: 1;
+
+
+}
+
+.course-description p {
+    color: #969696;
+}
+
+.course {
+
+    width: 47%;
+    box-shadow: 0px 7.44px 7.44px 0px #0000003c;
+    font-family: var(--mainFont);
+    border-radius: 10px;
+    /* padding: 10px; */
+    /* flex-grow: 1; */
+
+}
+
+.course-card {
+    position: relative;
+}
+
+.course-details {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex-wrap: wrap;
+
+}
+
+.course-details .row {
+    justify-content: space-around;
+    font-family: var(--mainFont);
+}
+
+.course-details .row h3 {
+    font-weight: 700;
+}
+
+.course-details .row:first-of-type span {
+    color: var(--maincolor);
+}
+
+.course-details .row:last-of-type {
+    justify-content: flex-start;
+    color: #969696;
+}
+
+.course-card img {
+    filter: brightness(60%);
+    height: 200px;
+    width: 100%;
+    /* padding-top:30px ; */
+    object-fit: cover;
+}
+
+.course-info {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 10px;
+    color: #fff;
+}
+
+.course-info span:first-of-type {
+    background-color: var(--maincolor);
+    padding: 10px;
+}
+
+.course-info span:last-of-type {
+    color: #fff;
+    font-size: 20px;
+    align-self: flex-end;
+    font-family: var(--mainFont);
+    font-weight: 700;
+
+}
+
+.course-description {
+    width: calc((100% - 85px) / 2);
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+    /* لجعلها في الوسط أفقياً */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+/end course/ .category-item {
+    text-align: center;
+    margin: 15px;
+
+}
+
+.category-item:hover {}
+
+.category-item img {
+    width: 80%;
+    height: 200px;
+    border-radius: 100%;
+
+
+}
+
+.category-item h6 {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: 50%;
+
+}
+
+.section-space {
+    margin-bottom: 90px;
+    /* تحديد المسافة بين السكشنين */
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-size: 100%, 100%;
+}
+
+.containerr {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.text-center {
+
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+body.dark {
+    background-color: #121212;
+
+}
+
+.changemode {
+
+    top: 20px;
+    right: 20px;
+    color: #f0f1f2;
+
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+
+}
+
+body.dark .changemode {
+    color: #f1eeee;
+
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col {
+    padding-right: 150px;
+}
+
+.card-text {
+    color: #969696;
+}
+
+.card {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+}
+
+.card img {
+    height: 300px;
+    width: 300px;
+}
+
+.card-body {
+    display: contents;
+}
+
+.button_b {
+    background-color: #25d366;
+    border-radius: 50px;
+    padding: 15px;
+    padding-top: 15px;
+}
+
+.disc_1 {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.disc_section {
+    padding-right: 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.paragraph {
+    padding-right: 20px;
+    color: #969696;
+}
+
+.button-bb {
+    padding-top: 30px;
+}
+
+h4 {
+    color: tomato;
+}
+
+.strongg {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/start course/ .courses1 {
+    padding: 40px 0;
+    height: 100px;
+
+
+}
+
+.courses1 .row1 {
+    
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.course1 img {
+    height: 400px;
+    width: 100%;
+}
+.course-card1 {
+    height: 400px;
+    width: 500px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-items1 {
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 350px; */
+    gap: 10px;
+    flex-grow: 1;
+
+
+}
+
+.course-description1 p {
+    color: #969696;
+}
+
+.course1 {
+
+    width: 47%;
+   
+    font-family: var(--mainFont);
+    border-radius: 10px;
+    padding-top: 10px;
+     padding-right: 160px; 
+     flex-grow: 1; 
+
+}
+
+
+
+.course-details1 {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex-wrap: wrap;
+
+}
+
+.course-details1 .row1 {
+    justify-content: space-around;
+    font-family: var(--mainFont);
+}
+
+.course-details1 .row1 h3 {
+    font-weight: 700;
+}
+
+.course-details1 .row1:first-of-type span {
+    color: var(--maincolor);
+}
+
+.course-details1 .row1:last-of-type {
+    justify-content: flex-start;
+    color: #969696;
+}
+
+.course-card1 img {
+    filter: brightness(60%);
+    height: 400px;
+    width: 100%;
+    /* padding-top:30px ; */
+    object-fit: cover;
+}
+
+.course-info1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 10px;
+    color: #fff;
+}
+
+.course-info1 span:first-of-type {
+    background-color: var(--maincolor);
+    padding: 10px;
+}
+
+.course-info1 span:last-of-type {
+    color: #fff;
+    font-size: 20px;
+    align-self: flex-end;
+    font-family: var(--mainFont);
+    font-weight: 700;
+
+}
+
+.course-description1 {
+    width: calc((100% - 85px) / 2);
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+    /* لجعلها في الوسط أفقياً */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}

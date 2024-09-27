@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <header>
+
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+
+
+      
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+             
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav  flex-grow-0 pe-3">
+                <li class="nav-item">
+                  
+                  <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="product.html">المتجر</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    بكجات
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="backage.html">بكج العكر الفاسي</a></li>
+                    <li><a class="dropdown-item" href="backage2.html">بكج النيلة المغربية</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    
+                  </ul>
+                </li>
+                <li class="nav-item nav-item-nowrap">
+                  <a class="nav-link" href="#footer_id">تواصل معنا</a>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+       
+
+        
+
+
+
+
+
+
+
+        <div class="mx-auto">
+          <img class="img-logo" src="img/MOO.png" alt="Moroccan Star">
+        </div>
+
+
+        <div class="custom-icons d-flex align-items-center">
+          <li class="nav-item">
+
+            <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-heart"></i></a>
+          </li>
+          <li class="nav-item" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <!-- رابط الأيقونة الذي يفتح الـ Modal -->
+            <a id="login_id" class="nav-link" href="#">
+              <i class="fas fa-user"></i>
+            </a>
+          </li>
+          <li>
+            <a class="changemode nav-link "> <svg width="15px" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z" />
+              </svg></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+          </li>
+
+        </div>
+
+
+
+
+
+        <!-- نافذة تسجيل الدخول باستخدام Modal -->
+        <!-- <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true"
+          style="z-index: 999;">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">تسجيل الدخول</h5>
+
+              </div>
+              <div class="modal-body">
+                <input type="text" id="username" class="form-control mb-3"
+                  placeholder="اسم المستخدم أو البريد الإلكتروني">
+                <input type="password" id="password" class="form-control mb-3" placeholder="كلمة المرور">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+                <button type="button" class="btn btn-primary" onclick="login()">تسجيل الدخول</button>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide vh-100  ">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner h-100 text-white">
+        <div class="carousel-item  active h-100 vh-100"
+          style="background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)) , url('img/adsc.png');">
+          <div class="carousel-caption h-100 d-flex flex-column justify-content-center align-items-center">
+            <img class="img-item" src="img/MOO.png" alt="">
+            <div class="carousel-box">
+              <h2>كل ما تحتاجيه لجمالك في مكان واحد</h2>
+              <p>جميع منتجات النجمة المغربية تجدينه هنا</p>
+              <a href="#footer_id"><button class="btn btn-outline-secondary">تواصل معنا</button>
+            </div></a>
+
+
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+  </header>
+
+  <div class="containerr mt-5 section-space">
+
+    <h2 class="text-center mb-4">أصنافنا</h2>
+
+    <div id="categoriesCarousel" class="carousel slide" data-bs-interval="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-3 category-item">
+              <img class="imagein" src="img/شمس.jpg" alt="Category 1">
+              <h6>واقي شمس</h6>
+            </div>
+            <div class="col-3 category-item">
+              <img class="imagein"  src="img/كريم.jpg" alt="Category 2">
+              <h6>كريم ورد</h6>
+            </div>
+            <div class="col-3 category-item">
+              <img class="imagein"  height="196" width="196" src="img/زبدة.jpg" alt="Category 3">
+              <h6>زبدة الزنجبيل</h6>
+            </div>
+            <div class="col-3 category-item">
+              <img class="imagein"  src="img/مزيل.jpg" alt="Category 4">
+              <h6>مزيل عرق</h6>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-3 category-item">
+              <img class="imagein"  src="img/ماء ورد.jpg" alt="Category 5">
+              <h6>ماء ورد</h6>
+            </div>
+            <div class="col-3 category-item">
+              <img class="imagein"  src="img/ماسك العكر الفاسي.png" alt="Category 6">
+              <h6>ماسك العكر الفاسي</h6>
+            </div>
+            <div class="col-3 category-item">
+              <img class="imagein"  src="img/صابون المسك للطهارة.png" alt="Category 7">
+              <h6>صابون المسك للطهارة</h6>
+            </div>
+            <div class="col-3 category-item">
+              <img class="imagein"  src="img/سكراب القهوة والشكلاته.png" alt="Category 8">
+              <h6>سكراب القهوة والشكلاته</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#categoriesCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#categoriesCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <section class="courses">
+    <div class="container">
+      <div class="row">
+        <div class="course-items col-lg-5">
+          <div class="course">
+            <div class="course-card">
+              <img src="img/as.jpg" width="134" height="200" />
+              <div class="course-info">
+                <span>الاكثر طلبا</span>
+                <span>$20 USD</span>
+              </div>
+            </div>
+            <div class="course-details">
+              <div class="row">
+                <h5>التنت المغربي</h5>
+
+              </div>
+              <div class="row">
+                <span>منتجات تجميل وعناية بالبشرة</span>
+                <span>منتجات النجمة المغربية</span>
+              </div>
+            </div>
+          </div>
+          <div class="course">
+            <div class="course-card">
+              <img src="img/ass.jpg" width="134" height="200" />
+              <div class="course-info">
+                <span>الاكثر طلبا</span>
+                <span>$20 USD</span>
+              </div>
+            </div>
+            <div class="course-details">
+              <div class="row">
+                <h5>ديودرانت</h5>
+
+              </div>
+              <div class="row">
+                <span>منتجات تجميل وعناية بالبشرة</span>
+                <span>منتجات النجمة المغربية</span>
+              </div>
+            </div>
+          </div>
+          <div class="course">
+            <div class="course-card">
+              <img src="img/asss.jpg" width="134" height="200" />
+              <div class="course-info">
+                <span>الاكثر طلبا</span>
+                <span>$20 USD</span>
+              </div>
+            </div>
+            <div class="course-details">
+              <div class="row">
+                <h5>بكج التفتيح</h5>
+
+              </div>
+              <div class="row">
+                <span>منتجات تجميل وعناية بالبشرة</span>
+                <span>منتجات النجمة المغربية</span>
+              </div>
+            </div>
+          </div>
+          <div class="course">
+            <div class="course-card">
+              <img src="img/asas.jpg" width="134" height="200" />
+              <div class="course-info">
+                <span>الاكثر طلبا</span>
+                <span>$20 USD</span>
+              </div>
+            </div>
+            <div class="course-details">
+              <div class="row">
+                <h5>صابون الورد</h5>
+
+              </div>
+              <div class="row">
+                <span>منتجات تجميل وعناية بالبشرة</span>
+                <span>منتجات النجمة المغربية</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="course-description col-lg-7">
+
+          <h2>المنتجات المتوفرة</h2>
+          <p>كل ما يلزمك من منتجات للجسم(ترطيب , تقشير , عناية) </p>
+
+          <button type="button" class="btn"><a href="product.html">انقر للمزيد</a></button>
+
+        </div>
+
+      </div>
+    </div>
+          
+  </section>
+
+
+
+  <footer id="footer_id" class="footer">
+    <div class="container">
+      <div class="footer-left-side">
+        <div class="logo">
+          <a class="img-logoo" href="#">
+            <img class="img-logoo" src="img/MOO.png" alt="Moroccan Star" width="500" height="200">
+          </a>
+        </div>
+
+      </div>
+
+      <div class="footer-right-side">
+        <div class="footwer-item">
+          <h2>اقسام المتجر</h2>
+          <nav>
+            <ul>
+              <li><a href="index.html">الرئيسية</a></li>
+              <li><a href="#">المتجر</a></li>
+              <li><a href="#">بكجات</a></li>
+              <li><a href="#login_id">تسجيل الدخول</a></li>
+
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footwer-item">
+          <h2>تواصل معنا</h2>
+          <nav>
+            <ul>
+              <li><a
+                  href="https://myaccount.google.com/?hl=ar&utm_source=OGB&utm_medium=act">salehaseel129@gmail.com</a>
+              </li>
+              <li><a href="https://www.facebook.com/profile.php?id=61564503345349">facebook</a></li>
+              <li><a href="">instagram</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">تسجيل الدخول</h5>
+
+        </div>
+        <div class="modal-body">
+          <input type="text" id="username" class="form-control mb-3" placeholder="اسم المستخدم أو البريد الإلكتروني">
+          <input type="password" id="password" class="form-control mb-3" placeholder="كلمة المرور">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+          <button type="button" class="btn btn-primary" onclick="login()">تسجيل الدخول</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
